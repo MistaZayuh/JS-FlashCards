@@ -2,7 +2,7 @@ body {
   margin: 25px;
   background-color: lightpink;
 }
-
+/* I actually hate CSS with a passion. Please release me from this hell */
 .card {
   border: 1px solid black;
   background-color: white;
@@ -13,6 +13,20 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+.parentcard {
+  position: relative;
+}
+
+.parentcard > div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .row {
@@ -32,4 +46,16 @@ body {
   display: flex;
   justify-content: center;
   margin: 40px;
+}
+
+.edit {
+  display: flex;
+  align-self: flex-end;
+  margin: 5px;
+}
+
+.delete {
+  display: flex;
+  align-self: flex-end;
+  margin: 5px;
 }
